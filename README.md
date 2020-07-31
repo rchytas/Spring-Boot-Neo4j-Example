@@ -32,6 +32,7 @@ CREATE (Tacrolimus:Drug {name: 'Tacrolimus', therapeuticArea: 'Asthma and Multip
 ```
 - Creation of Relationships:
 
+```
 MATCH (a:Drug),(b:Condition)
 WHERE a.name = 'Amevive' AND b.name = 'Asthma'
 CREATE (a)-[r:PRESCRIBED {dose: 2}]->(b)
@@ -64,8 +65,9 @@ RETURN type(r)
 ```
 
 ## Neo4j - browser console
+
 ![Alt text](neo4j.png?raw=true "neo4j")
 
-## Drug Graph REST Response
+## Drug Condition Graph REST Response
 
 ![Alt text](rest_response.png?raw=true "Drug Graph")
