@@ -10,16 +10,6 @@ This example is for visualizing drug(s) and condition(s) its prescribed for usin
     Spring Boot
     REST API
 
-## Neo4J 
-- Docker command to bring up Neo4J server
-```
-docker run --publish=7474:7474 --publish=7687:7687 neo4j:latest
-```
-- Neo4J Browser URL
-```
-http://localhost:7474/browser
-```
-
 ## Cypher Queries for Neo4J
 - Creation of Drug and Condition nodes:
 
@@ -64,10 +54,19 @@ RETURN type(r)
 ;
 ```
 
-## Neo4j - browser console
+## Neo4J Docker Administration
+- Startup
+```
+docker run --publish=7474:7474 --publish=7687:7687 neo4j:latest
+```
+
+## Neo4j - Browser Console
+
+http://localhost:7474/browser
 
 ![Alt text](neo4j.png?raw=true "neo4j")
 
 ## Drug Condition Graph REST Response
 
 ![Alt text](rest_response.png?raw=true "Drug Graph")
+
