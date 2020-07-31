@@ -2,7 +2,7 @@
 
 This example is for visualizing drug(s) and condition(s) its prescribed for using Neo4j + Spring Boot Integration.  Provides following REST API -
 
-- `GET - /graph/neo4j/drugs` returns the list of Drugs from the Neo4j Instance running as a Docker container
+- `GET - /graph/neo4j/drugs` returns the list of Drugs, Conditions and the "PRESCRIBED" relationship from the Neo4j Instance running as a Docker container
 
 ## Technologies explored
     Docker
