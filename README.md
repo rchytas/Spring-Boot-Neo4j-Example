@@ -29,6 +29,8 @@ CREATE (Diabetes:Condition {name: 'Diabetes', symptom: 'Fatigue'})
 CREATE (Amevive:Drug {name: 'Amevive', therapeuticArea: 'Diabetes', activeIngredient: 'Pixie Dust'})
 CREATE (Ketoconazole:Drug {name: 'Ketoconazole', therapeuticArea: 'Diabetes and COPD', activeIngredient: 'Benzoid Sulphur'})
 CREATE (Tacrolimus:Drug {name: 'Tacrolimus', therapeuticArea: 'Asthma and Multiple Sclerosis', activeIngredient: 'Propylene glycol'})
+```
+- Creation of Relationships:
 
 MATCH (a:Drug),(b:Condition)
 WHERE a.name = 'Amevive' AND b.name = 'Asthma'
@@ -61,7 +63,7 @@ RETURN type(r)
 ;
 ```
 
-## Neo4j - broweser console
+## Neo4j - browser console
 ![Alt text](neo4j.png?raw=true "neo4j")
 
 ## Drug Graph REST Response
