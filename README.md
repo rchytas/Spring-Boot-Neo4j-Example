@@ -11,7 +11,7 @@ This example is for visualizing drug(s) and condition(s) its prescribed for usin
     REST API
 
 ## Cypher Queries for Neo4J
-- Creation of Drug and Condition nodes:
+- Creation of Drug and Condition Graph Nodes:
 
 ```
 CREATE (Asthma:Condition {name: 'Asthma', symptom: 'Shortness of Breath'})
@@ -20,7 +20,7 @@ CREATE (Amevive:Drug {name: 'Amevive', therapeuticArea: 'Diabetes', activeIngred
 CREATE (Ketoconazole:Drug {name: 'Ketoconazole', therapeuticArea: 'Diabetes and COPD', activeIngredient: 'Benzoid Sulphur'})
 CREATE (Tacrolimus:Drug {name: 'Tacrolimus', therapeuticArea: 'Asthma and Multiple Sclerosis', activeIngredient: 'Propylene glycol'})
 ```
-- Creation of Relationships:
+- Creation of Relationships or Graph Edges:
 
 ```
 MATCH (a:Drug),(b:Condition)
