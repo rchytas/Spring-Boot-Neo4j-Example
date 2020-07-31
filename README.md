@@ -42,11 +42,7 @@ MATCH (a:Drug),(b:Condition)
 WHERE a.name = 'Ketoconazole' AND b.name = 'Asthma'
 CREATE (a)-[r:PRESCRIBED {dose: 4}]->(b)
 RETURN type(r)
-;
-```
-- Adding new relationship
 
-```
 MATCH (a:Drug),(b:Condition)
 WHERE a.name = 'Tacrolimus' AND b.name = 'Asthma'
 CREATE (a)-[r:PRESCRIBED {dose: 6}]->(b)
