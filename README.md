@@ -4,7 +4,7 @@ This example is for visualizing drug(s) and condition(s) its prescribed for usin
 
 - `GET - /graph/neo4j/drugs` returns the list of Drugs, Conditions and the "PRESCRIBED" relationship from the Neo4j Instance running as a Docker container
 
-## Technologies explored
+## Technology Stack
     Docker
     Neo4j - Docker Container, Bolt Driver, Spring Boot Integration
     Spring Boot
@@ -56,7 +56,7 @@ RETURN type(r)
 docker run --publish=7474:7474 --publish=7687:7687 neo4j:latest
 ```
 
-## Neo4j - Browser Console
+## Neo4J Browser Console
 
 http://localhost:7474/browser
 
